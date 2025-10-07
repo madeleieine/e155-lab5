@@ -3,9 +3,9 @@
 // jbrake@hmc.edu
 // 10/31/22
 
-#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
+#include "C:\Users\mkan\Documents\e155-lab5\lab5_mk\src\main.h"
 
-int main(void) {
+int interrupt(void) {
     // Enable LED as output
     gpioEnable(GPIO_PORT_B);
     pinMode(LED_PIN, GPIO_OUTPUT);
@@ -38,7 +38,7 @@ int main(void) {
     // 4. Turn on EXTI interrupt in NVIC_ISER
     NVIC->ISER[0] |= (1 << EXTI4_IRQn);
     while(1){   
-        delay_millis(TIM2, 200);
+        delay_millis(TIM2, 500);
     }
 
 }

@@ -61,6 +61,7 @@
       <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
       <file file_name="src/button_interrupt.c" />
       <file file_name="src/button_polling.c" />
+      <file file_name="main.c" />
       <file file_name="src/main.h" />
       <file file_name="lib/STM32L432KC.h" />
       <file file_name="lib/STM32L432KC_FLASH.c" />

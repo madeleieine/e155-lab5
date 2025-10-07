@@ -16,6 +16,16 @@ void initTIM(TIM_TypeDef * TIMx){
   TIMx->CR1 |= 1; // Set CEN = 1
 }
 
+void initTrigTIM(TIM_TypeDef * TIMx){
+  // set TIF flag in TIMx_SR\ ... i dont think this is right??
+  TIMx-> EGR |= (1 << 6);
+}
+
+void clearTrigTIM(TIM_TypeDef * TIMx){
+  // clear Trigger Interrup Flag
+  TIMx-> SR &= ~(1 << 6); 
+}
+
 void delay_millis(TIM_TypeDef * TIMx, uint32_t ms){
   TIMx->ARR = ms;// Set timer max count
   TIMx->EGR |= 1;     // Force update

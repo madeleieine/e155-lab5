@@ -3,7 +3,7 @@
 // jbrake@hmc.edu
 // 10/31/22
 
-#include "C:\Users\mkan\Documents\e155-lab5\lab5_mk\src\main.h"
+#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
 
 int interrupt(void) {
     // Enable LED as output

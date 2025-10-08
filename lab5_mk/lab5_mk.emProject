@@ -5,7 +5,8 @@
     c_preprocessor_definitions="DEBUG"
     gcc_debugging_level="Level 3"
     gcc_omit_frame_pointer="Yes"
-    gcc_optimization_level="None" />
+    gcc_optimization_level="None"
+    linker_printf_fp_enabled="Float" />
   <configuration
     Name="Release"
     c_preprocessor_definitions="NDEBUG"
@@ -59,6 +60,7 @@
     </folder>
     <folder Name="Source Files">
       <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="ai_prototype.c" />
       <file file_name="src/button_interrupt.c" />
       <file file_name="src/button_polling.c" />
       <file file_name="main.c" />

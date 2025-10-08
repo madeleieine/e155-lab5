@@ -1,18 +1,18 @@
 // main.c
 // reads quadrature encoder signals
-// prints speed of motor in rp
+// prints speed of motor in rotations per second
 // Madeleine Kan
 // mkan@hmc.edu
-// 10/7/25
+// 10/8/25
 
-#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
-//#include "main.h"
+#include "main.h"
 
 float count = 0;
 int A;
 int B;
 
-int notmain(void) {
+// Runs interrupt or polling version of main code
+int main(void) {
     int interrupt = 1;
     if (interrupt == 1){
       motorInterrupt();
@@ -23,6 +23,7 @@ int notmain(void) {
 
 }
 
+// Detects encoder pulses with interrupts
 void motorInterrupt(void){
   // Enable quadrature encoder inputs
     gpioEnable(GPIO_PORT_A);
@@ -70,6 +71,7 @@ void motorInterrupt(void){
     }
 }
 
+// Detects encoder pulses with polling
 void motorPoll(void){
     // Polling
     int volatile curA = digitalRead(QUAD_ENCODER_A);

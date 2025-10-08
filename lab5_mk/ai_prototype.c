@@ -1,4 +1,4 @@
-#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
+#include "main.h"
 
 int main(void){
   // Configure PA0 and PA1 as alternate function (AF mode) for Timer
@@ -22,9 +22,6 @@ int main(void){
 
   // Enable NVIC for TIM2 interrupt
   NVIC_EnableIRQ(TIM2_IRQn);
-
-
-
 
 }
 

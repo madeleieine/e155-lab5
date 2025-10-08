@@ -6,7 +6,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include "STM32L432KC.h"
+#include  "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\lib\STM32L432KC.h"
 #include <stm32l432xx.h>
 
 

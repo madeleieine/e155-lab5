@@ -5,7 +5,7 @@
 // mkan@hmc.edu
 // 10/8/25
 
-#include "main.h"
+#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
 
 float count = 0;
 int A;
@@ -13,7 +13,7 @@ int B;
 
 // Runs interrupt or polling version of main code
 int main(void) {
-    int interrupt = 1;
+    int interrupt = 0;
     if (interrupt == 1){
       motorInterrupt();
     } else {

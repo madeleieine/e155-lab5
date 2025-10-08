@@ -1,6 +1,6 @@
-#include "main.h"
+#include "C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\src\main.h"
 
-int main(void){
+int notmain(void){
   // Configure PA0 and PA1 as alternate function (AF mode) for Timer
   GPIOA->MODER &= ~(GPIO_MODER_MODE0_Msk | GPIO_MODER_MODE1_Msk); // Clear PA0 and PA1 mode
   GPIOA->MODER |= (GPIO_MODER_MODE0_1 | GPIO_MODER_MODE1_1); // Set PA0 and PA1 to alternate function

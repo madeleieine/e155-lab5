@@ -6,6 +6,7 @@ Output/Debug/Obj/lab5_mk/STM32L432KC_TIM.o: \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.24\include\__SEGGER_RTL_ConfDefaults.h \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.24\include\__SEGGER_RTL_Conf.h \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.24\include\__SEGGER_RTL_Arm_Conf.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.24\include\stdio.h \
   C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\STM32L4xx\Device\Include\stm32l432xx.h \
   C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\CMSIS_5\CMSIS\Core\Include\core_cm4.h \
   C:\Users\mkan\Documents\GitHub\e155-lab5\lab5_mk\CMSIS_5\CMSIS\Core\Include\cmsis_version.h \

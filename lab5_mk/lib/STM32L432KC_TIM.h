@@ -5,6 +5,7 @@
 #define STM32L4_TIM_H
 
 #include <stdint.h> // Include stdint header
+#include <stdio.h>
 #include <stm32l432xx.h>
 #include "STM32L432KC_GPIO.h"
 

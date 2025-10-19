@@ -13,7 +13,7 @@ int B;
 
 // Runs interrupt or polling version of main code
 int main(void) {
-    int interrupt = 0;
+    int interrupt = 1;
     if (interrupt == 1){
       motorInterrupt();
     } else {
@@ -64,10 +64,12 @@ void motorInterrupt(void){
     NVIC->ISER[0] |= (1 << EXTI2_IRQn);
 
     while(1){   
-        delay_millis(TIM2, 500);
-        float speed = count / (4 * 0.5 * 408);
-        printf("motor speed: %f rev/s \n", speed);
-        count = 0;
+      togglePin(LED_PIN);
+        //delay_millis(TIM2, 500);
+        //float speed = count / (4 * 0.5 * 408);
+        //printf("motor speed: %f rev/s \n", speed);
+        ////printf("count %d", TIM2->CNT);
+        //count = 0;
     }
 }
 
@@ -130,6 +132,7 @@ void motorPoll(void){
         }
       }
       float speed = count / (4 * 0.5 * 408);
+      printf("count %d", TIM2->CNT);
       printf("motor speed: %f rev/s \n", speed);
       count = 0;
     }
@@ -138,6 +141,7 @@ void motorPoll(void){
 
 // quad encoder A
 void EXTI1_IRQHandler(void){
+    togglePin(INTERRUPT_A);
     // Check that quad_encoder_a was what triggered our interrupt
     A = digitalRead(gpioPinOffset(QUAD_ENCODER_A));
     B = digitalRead(gpioPinOffset(QUAD_ENCODER_B));
@@ -149,12 +153,12 @@ void EXTI1_IRQHandler(void){
         } else { // A lags after B
           count--;
         }
-        togglePin(INTERRUPT_A);
     }
 }
 
 // quad encoder B
 void EXTI2_IRQHandler(void){
+    togglePin(INTERRUPT_A);
     // Check that quad_encoder_b was what triggered our interrupt
     A = digitalRead(gpioPinOffset(QUAD_ENCODER_A));
     B = digitalRead(gpioPinOffset(QUAD_ENCODER_B));

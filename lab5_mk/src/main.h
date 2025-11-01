@@ -13,7 +13,7 @@
 #define LED_PIN PB3
 #define BUTTON_PIN PA4
 #define QUAD_ENCODER_A PA1
-#define INTERRUPT_A PA7
+#define POLL PA7
 #define QUAD_ENCODER_B PA2
 #define DELAY_TIM TIM2
 

@@ -9,10 +9,10 @@
  <Memory3/>
  <Memory4/>
  <Project>
-  <ProjectSessionItem path="Executable_1"/>
-  <ProjectSessionItem path="Executable_1;Executable_1"/>
-  <ProjectSessionItem path="Executable_1;Executable_1;Script Files"/>
-  <ProjectSessionItem path="Executable_1;Executable_1;Source Files"/>
+  <ProjectSessionItem path="lab5_mk"/>
+  <ProjectSessionItem path="lab5_mk;lab5_mk"/>
+  <ProjectSessionItem path="lab5_mk;lab5_mk;Source Files"/>
+  <ProjectSessionItem path="lab5_mk;lab5_mk;System Files"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -36,6 +36,8 @@
  <Watch4>
   <Watches active="0" update="Never"/>
  </Watch4>
- <Files/>
- <EMStudioWindow activeProject="Executable_1" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="66" useTextEdit="1" path="main.c" left="0" selected="1" top="66" codecName="Default"/>
+ </Files>
+ <EMStudioWindow activeProject="lab5_mk" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
